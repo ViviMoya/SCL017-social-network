@@ -8,7 +8,7 @@
   box-sizing: border-box;
   list-style: none;
   clear: both;
-  
+  font-family: "Montserrat", sans-serif;
 }
 .container__form-template {
   background: #f6f5f7;
@@ -276,7 +276,6 @@ form.sign-in-form {
   .container__forms {
     min-height: 800px;
     height: 100vh;
-    border-radius: none;
     box-shadow: none;
     width: 100%;
     max-width: 100%;
