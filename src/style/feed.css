@@ -14,13 +14,14 @@
     float: left;
     justify-content: flex-end;
 }
+
 .container-btn-like{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     display: inline-flex;
     align-content: space-between;
-   float: left;
+    float: left;
 }
 .like__btn, .recommend__btn{
   padding: 1.5em 1em;

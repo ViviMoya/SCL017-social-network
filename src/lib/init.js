@@ -17,7 +17,6 @@ export const init = () => {
 const currentPath = window.location.hash;
 switch (currentPath) {
   case '#feed':
-    // document.getElementById('root').appendChild(standardTemplate());
     containerViews.appendChild(viewFeed()); // ruta muro posts
     break;
   case '#profile':
