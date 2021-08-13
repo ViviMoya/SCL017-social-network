@@ -2,7 +2,6 @@ import { router } from './routers.js';
 import { viewForms } from '../views/viewForms.js';
 import { viewFeed } from '../views/viewFeed.js';
 import { viewProfile } from '../views/viewProfile.js';
-// import { viewPost } from '../views/viewPost.js';
 
 const containerViews = document.querySelector('#root');
 
@@ -25,10 +24,6 @@ switch (currentPath) {
     containerViews.innerHTML = '';
     containerViews.appendChild(viewProfile()); // ruta perfil
     break;
-  /* case '#post':
-        containerViews.innerHTML = '';
-        containerViews.appendChild(viewPost()); // ruta post
-        break; */
   default:
     containerViews.innerHTML = 'Error 404';
     break;

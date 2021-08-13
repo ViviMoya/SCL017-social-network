@@ -13,7 +13,7 @@ export const topMenuComponent = () => {
     <div class="nameApp">PUNTO PYME</div>
 
     <div class="search">
-      <input type="text" class="inputSearch" placeholder="Buscar">
+     <input type="text" class="inputSearch" placeholder="Buscar">
     </div>
 
      <div class="menu-icons2">
