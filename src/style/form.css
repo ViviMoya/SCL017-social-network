@@ -16,7 +16,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: "Montserrat", sans-serif;
   height: 100vh;
   margin: -20px 0 50px;
 }
@@ -270,8 +269,21 @@ form.sign-in-form {
 .container__forms.sign-up-mode .right-panel {
   pointer-events: all;
 }
+/*ojooo*/
+.containerFooter {
+  background-color: #222;
+  color: #fff;
+  font-size: 18px;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 999;
+  height: 1.5em;
+}
 
-
+/*------------------*/
 @media (max-width: 870px) {
   .container__forms {
     min-height: 800px;
@@ -365,7 +377,7 @@ form.sign-in-form {
     top: 5%;
     transform: translate(-50%, 0);
   }
-  footer {
+  .containerFooter {
     background-color: #222;
     color: #fff;
     font-size: 14px;
@@ -377,7 +389,7 @@ form.sign-in-form {
     z-index: 999;
   }
   
-  footer p {
+  .form__p{
     margin: 2% 0;
   }
 }

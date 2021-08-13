@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
-
+.view__feed {
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+}
+.image__user-feed {
+  width: 50px;
+  height: auto;
+  border-radius: 50px;
+  box-shadow: 8px 8px 15px 0px gray;
+}
 .container_post-feed {
   border: 1px solid rgb(201, 201, 201);
   padding: 5px;
@@ -14,8 +24,7 @@
     float: left;
     justify-content: flex-end;
 }
-
-.container-btn-like{
+.container-btn-like {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

@@ -1,6 +1,7 @@
 import { topMenuComponent, mobileMenuComponent } from './components/navbar.js';
 import { viewPost } from './viewPost.js';
 import { fetchPosts, firebaseLogout } from '../lib/firebase.js';
+
 // eslint-disable-next-line no-var
 var containerViews = document.querySelector('#root');
 
@@ -13,8 +14,10 @@ export const viewFeed = async () => {
   containerFeedTemplate.appendChild(topMenuComponent());
  
   const feedTemplate = `
-    <div>tu nombre: <span id='username'>${firebase.auth().currentUser.displayName || window.localStorage.getItem('puntopyme-name')}</span></div>
-    <div class='view__feed'>Feed</div>`;
+    <div class='view__feed'>
+    <img src='images/UserImage.png' class='image__user-feed' id='image__user-feed'/>
+    <div><span id='username'>${firebase.auth().currentUser.displayName || window.localStorage.getItem('puntopyme-name')}</span></div>
+    </div>`;
   containerFeedTemplate.innerHTML += feedTemplate;
 
   let containerPostFeed = '';
@@ -124,8 +127,5 @@ export const viewFeed = async () => {
       alert("chao!");
       firebaseLogout();
   });
-  
-   
-
   return containerFeedTemplate;
 };
