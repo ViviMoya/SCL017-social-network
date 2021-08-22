@@ -1,3 +1,5 @@
+/* eslint-disable implicit-arrow-linebreak */
+/* eslint-disable no-console */
 export const viewPost = () => {
   const containerPostTemplate = document.createElement('div');
   containerPostTemplate.className = 'container__post-template';
@@ -92,7 +94,7 @@ export const viewPost = () => {
       modalPost.style.display = 'none';
       containerPostTemplate.querySelector('#image-post').src = '';
       containerPostTemplate.querySelector('#post-form').reset();
-      console.log('Data Saved');
+      // console.log('Data Saved');
     });
   };
 
@@ -108,24 +110,22 @@ export const viewPost = () => {
       };
       const task = ref.child(nameFile).put(file, metadata);
       task
-        .then((snapshot) => {
+        .then((snapshot) =>
           // eslint-disable-next-line no-console
-          console.log(snapshot.ref.getDownloadURL());
-          return snapshot.ref.getDownloadURL();
-        })
+          // console.log(snapshot.ref.getDownloadURL());
+          snapshot.ref.getDownloadURL())
         .then((url) => {
-          console.log(url);
+          // console.log(url);
           const imagePost = containerPostTemplate.querySelector('#image-post');
           imagePost.src = url;
           savePost(url);
         })
         .catch(console.error);
     } else {
-      console.log('no existe ningun archivo');
+      // console.log('no existe ningun archivo');
     }
   });
 
-
   return containerPostTemplate;
 };
-//imagen.src = URL.createObjectURL(file); preview image
+// imagen.src = URL.createObjectURL(file); preview image

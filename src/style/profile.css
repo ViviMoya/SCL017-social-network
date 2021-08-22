@@ -16,8 +16,6 @@
     padding: 0;
     max-width: 960px;
 }
-
-
 .form__select {
   background-color: #f0f0f0;
   outline: none;
@@ -29,8 +27,6 @@
   cursor: pointer;
   border-radius: 55px;
 }
-	
-
 .container_post-profile {
   border: 1px solid rgb(201, 201, 201);
   padding: 5px;
@@ -110,7 +106,6 @@
   font-size: 28px;
   font-weight: bold;
 }
-
 .close__modal-delete:hover,
 .close__modal-delete:focus {
   color: #000;
@@ -138,7 +133,6 @@
 .btn__modal-delete:hover {
   background-color: #4d84e2;
 }
-
 /* The Modal Update Message (background) */
 .container__modal-edit {
   display: none; /* Hidden by default */
@@ -173,7 +167,6 @@
   font-size: 28px;
   font-weight: bold;
 }
-
 .close__modal-edit:hover,
 .close__modal-edit:focus {
   color: #000;

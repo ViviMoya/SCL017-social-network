@@ -1,4 +1,9 @@
-import { googleLogin, firebaseSignUp, firebaseLogIn, facebookLogin } from '../lib/firebase.js';
+/* eslint-disable no-useless-escape */
+/* eslint-disable max-len */
+/* eslint-disable no-use-before-define */
+import {
+  googleLogin, firebaseSignUp, firebaseLogIn, facebookLogin,
+} from '../lib/firebase.js';
 import { footerComponent } from './components/footer.js';
 
 export const viewForms = () => {
@@ -129,7 +134,7 @@ export const viewForms = () => {
     inputSigninPassword.type = 'password';
     btnUnmaskify.style.display = 'block';
     btnMaskify.style.display = 'none';
-    }
+  }
 
   // -------------------- Ocultar/mostrar contraseñas en input de password-signup--------------//
 
@@ -279,7 +284,7 @@ export const viewForms = () => {
   inputUserPasswordSignIn.addEventListener('keyup', (e) => {
     passwordInValidate(e.target.value);
   });
-  
+
   const btnSignUpModal = containerFormTemplate.querySelector('#btn-signup');
   const modalVerify = containerFormTemplate.querySelector('#container__modal-verify');
   const closeModalVerify = containerFormTemplate.querySelector('#close__modal-verify');

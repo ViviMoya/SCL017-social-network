@@ -21,18 +21,14 @@ export const router = async (route) => {
       case '#profile':
         document.getElementById('root').innerHTML = '';
 
-        
         containerViews.appendChild(await viewProfile()); // ruta perfil
         break;
-     default:
-         containerViews.innerHTML = 'Error 404';
+      default:
+        containerViews.innerHTML = 'Error 404';
         break;
     }
   } else {
-    console.log('no tengo sesion');
     // containerViews.innerHTML = '';
     containerViews.appendChild(viewForms());
-
   }
- 
 };
