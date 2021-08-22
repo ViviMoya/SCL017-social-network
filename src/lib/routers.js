@@ -30,7 +30,7 @@ export const router = async (route) => {
     }
   } else {
     console.log('no tengo sesion');
-    containerViews.innerHTML = '';
+    // containerViews.innerHTML = '';
     containerViews.appendChild(viewForms());
 
   }
