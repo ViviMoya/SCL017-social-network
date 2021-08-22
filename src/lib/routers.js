@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+/* eslint-disable import/named */
 import { viewForms } from '../views/viewForms.js';
 import { viewFeed } from '../views/viewFeed.js';
 import { viewProfile } from '../views/viewProfile.js';
@@ -34,4 +33,3 @@ export const router = async (route) => {
     containerViews.appendChild(viewForms());
   }
 };
->>>>>>> sprint7

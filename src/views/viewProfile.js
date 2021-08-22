@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 /* eslint-disable no-console */
 import { topMenuComponent, mobileMenuComponent } from './components/navbar.js';
 import { firebaseLogout, fetchPosts } from '../lib/firebase.js';
