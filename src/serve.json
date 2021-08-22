@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    { "source": "#feed", "destination": "#feed" },
+    { "source": "#profile", "destination": "#feed" },
+    { "source": "#post", "destination": "#feed" }
+  ]
+}
+
+  
